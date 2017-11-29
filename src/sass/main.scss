@@ -92,37 +92,10 @@ a {
 
 /* ----------- Input Style start -----------*/
 
-// input.nav-search, textarea {
-//   margin-right: 3rem;
-//   padding:8px;
-//   border: none;
-//   border-radius: 5px;
-//   // background: url("/img/magnifying-glass.svg") no-repeat scroll 143px 8px;
-//   padding-right:30px;
-//   transition: all .5s ease;
-// }
-//
-// input.nav-search:focus {
-//    width: 200px;
-// }
-//
-// input[type="text"], textarea {
-//   background-color : #fff;
-// }
-//
+
 textarea:focus, input:focus{
     outline: none;
-}
-//
-//
-// .input__container {
-//     position:relative;
-//     margin:0 20px;
-//     background:#fff;
-//     width: 200px;
-//     border: none;
-//     border-radius: 5px;
-// }
+  }
 
 .input__img {
     position:absolute;
@@ -151,7 +124,7 @@ textarea:focus, input:focus{
 
 /* ----------- Input Style end -----------*/
 
-/* ----------- Section One start -----------*/
+/* ----------- Navigation start -----------*/
 
 nav {
   background-color: #3e3e58;
@@ -182,6 +155,11 @@ nav {
   border: 1px solid red;
 }
 
+
+/* ----------- Navigation end -----------*/
+
+/* ----------- Hero start -----------*/
+
 .hero {
   display: flex;
   flex-direction: row;
@@ -190,12 +168,45 @@ nav {
   padding-left: 10%;
   background-color: #3e3e58;
   border: 1px solid pink;
+  font-family: Montserrat, sans-serif;
 }
 
+input.hero__input {
+  margin-top: 8%;
+  padding: 15px;
+  background-color: #6E6D7F;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  min-width: 60%;
+  font-family: Montserrat, sans-serif;
+  font-size: .75rem;
+  font-weight: 300;
+}
 
+.hero__input::placeholder {
+  color: white;
+}
 
+.hero__button {
+  margin-top: 8%;
+  padding: 15px;
+  background-color: #3dbdb6;
+  border: none;
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: .75rem;
+  font-weight: 300;
+}
 
-/* ----------- Section One end -----------*/
+.hero__button:focus {
+  outline:0;
+}
+
+/* ----------- Hero end -----------*/
 
 /* ----------- Section Two start -----------*/
 
