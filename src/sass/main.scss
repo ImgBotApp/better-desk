@@ -177,6 +177,17 @@ nav {
 .hero__image {
   display: flex;
   align-items: flex-end;
+  text-align: right;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: auto;
+}
+
+.hero__image__svg {
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 /* ----------- Hero end -----------*/
