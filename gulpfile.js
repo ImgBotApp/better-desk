@@ -3,7 +3,7 @@ const sass = require("gulp-sass");
 
 const browserSync = require("browser-sync").create();
 
-gulp.task("serve", ["sass", "js", "images", "templates"], function() {
+gulp.task("serve", ["sass", "js", "images", "fonts", "templates"], function() {
   browserSync.init({
     server: {
       baseDir: "./public"
@@ -12,8 +12,9 @@ gulp.task("serve", ["sass", "js", "images", "templates"], function() {
 
   gulp.watch("./src/sass/**/*.scss", ["sass"]);
   gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/templates/**/*.html", ["templates"]);
   gulp.watch("./src/img/**", ["images"]);
+  gulp.watch("./src/fonts/**", ["fonts"]);
+  gulp.watch("./src/templates/**/*.html", ["templates"]);
 });
 
 gulp.task("sass", function() {
@@ -35,6 +36,13 @@ gulp.task("images", function() {
   return gulp
     .src("./src/img/**")
     .pipe(gulp.dest("./public/img"))
+    .pipe(browserSync.stream());
+});
+
+gulp.task("fonts", function() {
+  return gulp
+    .src("./src/fonts/**")
+    .pipe(gulp.dest("./public/fonts"))
     .pipe(browserSync.stream());
 });
 

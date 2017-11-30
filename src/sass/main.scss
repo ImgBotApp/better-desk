@@ -53,8 +53,16 @@ table {
 
 /* ----------- General Style start -----------*/
 
+@font-face {
+font-family: ProximaNova;
+src: url(/fonts/ProximaNova-Regular.otf);
+}
+
+body {
+	font-family: ProximaNova, Montserrat, sans-serif;
+}
+
 h1 {
-  font-family: Montserrat, sans-serif;
   color: white;
   font-size: 2.8em;
   max-width: 330px;
@@ -149,7 +157,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   color: #fff;
-  font-family: Montserrat, sans-serif;
   font-weight: 300;
 }
 
@@ -164,7 +171,6 @@ nav {
   min-height: 75vh;
   padding-left: 10%;
   background-color: #3e3e58;
-  font-family: Montserrat, sans-serif;
 }
 
 .hero__details {
@@ -194,7 +200,7 @@ nav {
 
 .email-box {
   display: flex;
-  margin-top: 25px;
+  margin-top: 35px;
   max-width: 90%;
   width: 90%;
 }
@@ -211,7 +217,8 @@ nav {
 }
 
 .email-input::placeholder {
-  color: white;
+	font-size: .75rem;
+  color: #fff;
 }
 
 .email-btn {
@@ -219,6 +226,7 @@ nav {
   border-radius: 0 2px 2px 0;
   background: #3dbdb6;
   font-weight: 300;
+	font-size: .75rem;
   color: #fff;
   width: 25%;
   border: none;
@@ -232,11 +240,153 @@ nav {
   justify-content: space-around;
   width: 100%;
   height: 14vh;
-  // background-color: #f9fafa;
-  background-color: #f9fafa;;
+  background-color: #f9fafa;
   border: solid 1px #eeeeee;
-  position: absolute;
+  // position: absolute;
   z-index: 1;
 }
 
 /* ----------- Section Two end -----------*/
+
+/* ----------- Support start -----------*/
+
+.support {
+  height: 75vh;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.support__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  max-width: 450px;
+  margin: auto;
+	padding-top: 3%;
+  color: #333333;
+  // border: 1px solid pink;
+}
+
+.support__details h2 {
+  text-align: center;
+  line-height: 2.3rem;
+}
+
+.support__options {
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	margin-top: 4%;
+	height: 50vh;
+	max-width: 850px;
+}
+
+.circle-support, .circle-help, .circle-chat {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.circle-support {
+	background-image: linear-gradient(132deg, #3dbdb6, #0089ce);
+}
+
+.circle-help {
+	background-image: linear-gradient(309deg, #7a86cc, #9facf8);
+}
+
+.circle-chat {
+	background-image:  linear-gradient(to bottom, #f3778f, #f26a95 44%, #f15a9d);
+}
+
+.support__options__info, .support__options__help, .support__options__chat {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: 200;
+	h3 {
+		margin-top: -.5rem;
+		color: #333333;
+	}
+	p {
+		margin-top: .8rem;
+		color: #72808e;
+		text-align: center;
+		max-width: 75%;
+	}
+	a {
+		text-decoration: none;
+		margin-top: .8rem;
+		color: #2d8cff;
+		font-size: 0.875rem;
+	}
+}
+
+/* ----------- Support end -----------*/
+
+/* ----------- Why BetterDesk start-----------*/
+
+.why-betterdesk {
+	color: #fff;
+	height: 100vh;
+	background-image: linear-gradient(117deg, #3dbdb6, #0089ce);
+	display: flex;
+  flex-direction: column;
+  // padding-left: 10%;
+}
+
+.why-welcome {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	// margin: auto;
+	padding-top: 5rem;
+	h2 {
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-size: 1rem;
+		font-weight: 200;
+		line-height: 1.9;
+		margin-top: 2rem;
+		max-width: 75%;
+	}
+	border: 1px red solid;
+}
+
+.why-hero {
+	display: flex;
+	flex-direction: row;
+}
+
+.why-info {
+  width: 50%;
+  // height: 164px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	border-radius: 3px;
+	background-color: rgba(24, 144, 164, 0.5);
+	box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.why-info h2, .why-info h3 {
+	color: #fff;
+}
+
+.todo-list {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ----------- Why BetterDesk end-----------*/
