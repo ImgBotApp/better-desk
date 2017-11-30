@@ -237,7 +237,7 @@ nav {
   border: none;
 }
 
-/* ----------- Section Two start -----------*/
+/* ----------- Logo Banner start -----------*/
 
 .front-page-banner {
   display: flex;
@@ -247,11 +247,10 @@ nav {
   height: 14vh;
   background-color: #f9fafa;
   border: solid 1px #eeeeee;
-  // position: absolute;
   z-index: 1;
 }
 
-/* ----------- Section Two end -----------*/
+/* ----------- Logo Banner Two end -----------*/
 
 /* ----------- Support start -----------*/
 
@@ -339,7 +338,7 @@ nav {
 
 .why-betterdesk {
 	color: #fff;
-	height: 100vh;
+	height: 120vh;
 	background-image: linear-gradient(117deg, #3dbdb6, #0089ce);
 	display: flex;
   flex-direction: column;
@@ -421,6 +420,8 @@ nav {
 // 	height: 0px;
 // }
 
+/* START WHY BOX */
+
 .why-info {
   width: 100%;
   display: flex;
@@ -433,36 +434,42 @@ nav {
 .why-box{ /* why-box */
   width: 70%;
   color: #fff;
+	margin-bottom: 2rem;
 }
 
 .why-box-heading{ /* why-box-heading */
   font-size: 1.3rem;
   color: #0F687B;
+	padding-left: 2rem;
 }
 
 .open .why-box-heading{ /* OPEN why-box-heading */
-    color: #fff;
+  color: #fff;
+	padding: 3rem 3rem 1.5rem 2rem;
+	background-color: rgba(24, 144, 164, 0.5);
+	border-radius: 3px;
 }
 
 .open .why-box-content{ /* OPEN why-box-content */
-    padding: 20px;
-    margin: 0px 0px 10px 0px;
-  	transform: scaleY(1);
-  	transform-origin: top;
-  	transition: transform 0.4s ease;
+  padding: 0 3rem 3rem 2rem;
+  margin: 0px 0px 10px 0px;
+	font-family: ProximaNovaLight, Montserrat, sans-serif;
+	font-size: .9rem;
+	font-weight: 200;
+	line-height: 1.6;
+	transform: scaleY(1);
+	transform-origin: top;
+	transition: transform 0.4s ease;
+ 	background-color: rgba(24, 144, 164, 0.5);
+	border-radius: 3px;
 }
 
 .close .why-box-content{ /* CLOSE why-box-content */
-    background-color: none;
-    height:0px;
-    transition:height 1s ease-out;
-	  transform: scaleY(0);
+  background-color: none;
+  height:0px;
+  transition:height 1s ease-out;
+  transform: scaleY(0);
 }
-
-.open .why-box {
-  background-color: rgba(24, 144, 164, 0.5);
-}
-
 
 /* END WHY BOX */
 
@@ -476,3 +483,9 @@ nav {
 }
 
 /* ----------- Why BetterDesk end-----------*/
+
+/* ----------- Learn More start -----------*/
+
+
+
+/* ----------- Learn More end -----------*/
