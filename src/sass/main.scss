@@ -265,7 +265,7 @@ nav {
 /* ----------- Support start -----------*/
 
 .support {
-  height: 75vh;
+  height: 70vh;
   width: 100%;
   margin-top: 5%;
 }
@@ -343,7 +343,7 @@ nav {
 
 .why-betterdesk {
 	color: #fff;
-	height: 140vh;
+	height: 130vh;
 	background-image: linear-gradient(117deg, #3dbdb6, #0089ce);
 	display: flex;
   flex-direction: column;
@@ -444,8 +444,8 @@ nav {
 .learn-more {
 	display: flex;
 	flex-direction: column;
-  height: 80vh;
-	margin: 3rem 0 1rem 0;
+  height: 90vh;
+	margin: 0 0 4rem 0;
 	h2 {
 		text-align: center;
 	  line-height: 2.3rem;
@@ -520,3 +520,105 @@ nav {
 }
 
 /* ----------- Report Banner Two end -----------*/
+
+/* ----------- Quote start -----------*/
+
+.quote {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	text-align: center;
+	background: no-repeat center/auto auto url('/img/woman-on-phone.jpg');
+	background:after {
+		opacity: 0.5;
+	}
+}
+
+.quote-content{
+	font-family: ProximaNovaRegular;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	h2 {
+	align-self: center;
+	font-size: 2rem;
+	max-width: 70%;
+	color: #fff;
+	padding-top: 18rem;
+}
+	h3 {
+		font-size: .8rem;
+		align-self: center;
+		color: #fff;
+		margin-top: 1.3rem;
+	}
+	svg {
+		align-self: center;
+		margin-top: 2.2rem;
+	}
+}
+
+/* ----------- Quote end -----------*/
+
+/* ----------- Banner three start -----------*/
+
+.banner-three {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+}
+
+.banner-three__content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+}
+
+.banner-three__content__format {
+	display: flex;
+	img:first-child {
+		margin-right: 15px;
+	}
+	img:last-child {
+		width: 80%;
+		height: auto;
+	}
+}
+
+.name-logo-format {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-height: 100%;
+	p {
+		margin-bottom: 8%;
+		color: #39394d;
+	}
+}
+
+/* ----------- Banner three end -----------*/
+
+/* ----------- Sign Up start -----------*/
+
+.sign-up {
+	height: 50vh;
+	background: #3dbdb6;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	h2 {
+			margin: 0 auto;
+			align-self: center;
+			font-size: 2.5rem;
+			max-width: 70%;
+			color: #fff;
+		}
+	}
+
+/* ----------- Sign Up end -----------*/
+
+/* ----------- Links start -----------*/
+
+/* ----------- Links end -----------*/
