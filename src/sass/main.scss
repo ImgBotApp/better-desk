@@ -602,23 +602,68 @@ nav {
 
 /* ----------- Sign Up start -----------*/
 
-.sign-up {
+.sign-up-section {
 	height: 50vh;
 	background: #3dbdb6;
 	display: flex;
 	align-items: center;
 	text-align: center;
-	h2 {
-			margin: 0 auto;
-			align-self: center;
-			font-size: 2.5rem;
-			max-width: 70%;
-			color: #fff;
-		}
+	margin: 0 auto;
 	}
+
+.sign-up-content {
+	font-family: ProximaNovaRegular;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+
+	h2 {
+		align-self: center;
+		font-size: 2.3rem;
+		color: #fff;
+	}
+}
+
+.sign-up-box {
+  display: flex;
+	justify-content: center;
+  margin-top: 45px;
+}
+
+.sign-up-input {
+	background-color: #3dbdb6;
+  padding: 15px;
+	border: solid 1px #e1e1e1;
+	border-right: 0;
+	border-radius: 2px 0 0 2px;
+	caret-color : #fff;
+	width: 40%;
+}
+
+.sign-up-input::placeholder {
+	font-size: .75rem;
+	color: #fff;
+}
+
+.sign-up-btn {
+  border: none;
+  border-radius: 0 2px 2px 0;
+  background: #fff;
+  font-weight: 300;
+	font-size: .75rem;
+  color: #3dbdb6;
+  border: none;
+	padding: 15px;
+	width: 15%;
+}
 
 /* ----------- Sign Up end -----------*/
 
 /* ----------- Links start -----------*/
+
+.link-section {
+	height: 40vh;
+	background: #1f2532;
+}
 
 /* ----------- Links end -----------*/
