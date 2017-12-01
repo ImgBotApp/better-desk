@@ -343,11 +343,10 @@ nav {
 
 .why-betterdesk {
 	color: #fff;
-	height: 130vh;
+	height: 140vh;
 	background-image: linear-gradient(117deg, #3dbdb6, #0089ce);
 	display: flex;
   flex-direction: column;
-  // padding-left: 10%;
 }
 
 .why-welcome {
@@ -444,16 +443,14 @@ nav {
 .learn-more {
 	display: flex;
 	flex-direction: column;
-  height: 90vh;
-	margin: 0 0 4rem 0;
+	height: 80vh;
+  margin-top: 4rem;
 	h2 {
 		text-align: center;
 	  line-height: 2.3rem;
 		margin-bottom: 2.5rem;
 		font-size: 2rem;
-		margin: auto;
 		color: #333333;
-		padding-bottom: 2rem;
 	}
 }
 
@@ -663,7 +660,7 @@ nav {
 
 .link-section {
 	display: flex;
-	height: 40vh;
+	height: 45vh;
 	background: #1f2532;
 	color: #9CA0AC;
 }
@@ -673,15 +670,39 @@ nav {
 	flex-direction: column;
 	max-width: 33%;
 	width: 33%;
-	justify-content: center;
-	align-content: center;
-	border: 1px solid green;
+	margin-top: 8.5%;
+}
+
+.link-section__one {
+	font-size: .7em;
+	h3 {
+		margin-top: 1rem;
+		width: 70%;
+		line-height: 1rem;
+	}
+}
+
+div.link-section__two {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1rem;
+	span {
+		margin-top: 0;
+		color: #fff;
+		line-height: 1.8rem;
+	}
+}
+
+.link-section__two > div {
+	font-size: .7em;
+	margin: 0 1rem;
+	line-height: 1.3rem;
 }
 
 .link-section__three {
 	img {
 		width: 23%;
-		margin: 0 0 3rem 3rem;
+		margin: 0 0 4rem 8rem;
 	}
 }
 
