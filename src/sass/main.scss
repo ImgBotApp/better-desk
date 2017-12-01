@@ -662,8 +662,27 @@ nav {
 /* ----------- Links start -----------*/
 
 .link-section {
+	display: flex;
 	height: 40vh;
 	background: #1f2532;
+	color: #9CA0AC;
+}
+
+.link-section > div {
+	display: flex;
+	flex-direction: column;
+	max-width: 33%;
+	width: 33%;
+	justify-content: center;
+	align-content: center;
+	border: 1px solid green;
+}
+
+.link-section__three {
+	img {
+		width: 23%;
+		margin: 0 0 3rem 3rem;
+	}
 }
 
 /* ----------- Links end -----------*/
